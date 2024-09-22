@@ -3,7 +3,7 @@ function Person(name, age) {
 	this.name=name
 	this.age=age
 
-	greet(){
+	greet=function(){
 		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old.`)
 	}
 }
@@ -11,7 +11,7 @@ function Person(name, age) {
 function Employee(name, age, jobTitle) {
 Person.call(name,age,jobTitle)
 this.jobTitle=jobTitle
-jobGreet(){
+jobGreet=function(){
 	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}`)
 }
 	
