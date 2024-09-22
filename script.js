@@ -18,9 +18,9 @@ this.jobGreet=function(){
 }
 Employee.prototype = Object.create(Person.prototype);
 Employee.prototype.constructor = Employee;
-const person = new Person('Alice', 30);
+const person = new Person('Alice', 25);
 person.greet(); // "Hello, my name is Alice, I am 30 years old."
-const employee = new Employee('Bob', 25, 'Software Engineer');
+const employee = new Employee('Bob', 30, 'Manager');
 employee.jobGreet();// "Hello, my name is Bob, I am 25 years old, and my job title is Software Engineer."
 // Do not change code below this line
 window.Person = Person;
